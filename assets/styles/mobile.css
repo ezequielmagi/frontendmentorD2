@@ -53,27 +53,29 @@ body{
 
 main{
     background-color: var(--Darkdesaturated-blue-card-background);
-    height: 70%;
+    height: 150vh;
 }
 
 .img-container{
-    height: 33%;
+    height: 20%;
     width: 100%;
 }
 
 .color-image{
-    height: 35%;
+    height: 30%;
     width: 100%;
     position: absolute;
     background-color: var(--Soft-violet-accent);
     z-index: 5;
-    opacity: 0.6;
+    opacity: 0.5;
+    border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
 }
 
 .img-container img{
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
-    height: 35vh;
+    height: 30vh;
     width: 100%;
     
 }
@@ -83,12 +85,12 @@ main{
    display: flex;
    flex-direction: column;
    align-content: center;  
-   margin: 20px auto;   
+   margin: 30px auto;   
 }
 
 .text-title{
     color: var(--White-main-heading-stats);
-     font-weight: 700;
+    font-weight: 700;
     font-size: 1.8rem;
     font-family: Inter;
     margin-bottom: 15px;
@@ -102,12 +104,41 @@ main{
 
 .text-msg{
     color: var(--Slightly-transparent-white-main-paragraph);
-    /* font-size: 15px;
+    font-size: 15px;
     font-family: Lexend Deca;
     font-weight: 400;
 
     line-height: 1.8;
     text-align: center;
     margin: 0 auto;
-    width: 70vw; */
+    width: 70vw;
+}
+
+.counters{
+    background-color: var(--Darkdesaturated-blue-card-background);
+    color: var(--White-main-heading-stats);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 25vh;
+}
+
+
+.counters p:first-child{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+    font-family: Inter;
+    
+}
+
+.counters{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--Slightly-transparent-white-main-paragraph);
+    font-family: Lexend Deca;
+    
 }
