@@ -53,31 +53,22 @@ body{
 
 main{
     background-color: var(--Darkdesaturated-blue-card-background);
-    height: 150vh;
+    height: 100vh;
 }
 
 .img-container{
-    height: 20%;
+    height: 40vh;
     width: 100%;
 }
 
-.color-image{
-    height: 30%;
-    width: 100%;
-    position: absolute;
-    background-color: var(--Soft-violet-accent);
-    z-index: 5;
-    opacity: 0.5;
-    border-top-left-radius: 15px;
-   border-top-right-radius: 15px;
-}
+
 
 .img-container img{
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
     height: 30vh;
     width: 100%;
-    
+    filter: invert(0.1) sepia(22) hue-rotate(256deg) saturate(200%) contrast(70%);
 }
 
 .text{

@@ -61,16 +61,7 @@ main{
     width: 100%;
 }
 
-.color-image{
-    height: 30%;
-    width: 100%;
-    position: absolute;
-    background-color: var(--Soft-violet-accent);
-    z-index: 5;
-    opacity: 0.5;
-    border-top-left-radius: 15px;
-   border-top-right-radius: 15px;
-}
+
 
 .img-container img{
    border-top-left-radius: 15px;
