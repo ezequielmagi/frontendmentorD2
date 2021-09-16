@@ -53,11 +53,11 @@ body{
 
 main{
     background-color: var(--Darkdesaturated-blue-card-background);
-    height: 150vh;
+    height: 110vh;
 }
 
 .img-container{
-    height: 20%;
+    height: 250px;
     width: 100%;
 }
 
@@ -66,7 +66,7 @@ main{
 .img-container img{
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
-    height: 30vh;
+    height: 250px;
     width: 100%;
     
 }
