@@ -52,6 +52,9 @@ body{
 }
 
 main{
+    border-radius: 15px;
+    margin: 15px auto;
+    max-width: 350px;
     background-color: var(--Darkdesaturated-blue-card-background);
     height: 100vh;
 }
