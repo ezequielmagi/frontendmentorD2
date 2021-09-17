@@ -53,7 +53,10 @@ body{
 
 main{
     background-color: var(--Darkdesaturated-blue-card-background);
+    border-radius: 15px;
     height: 110vh;
+    max-width: 350px;
+    margin: 15px auto;
 }
 
 .img-container{
