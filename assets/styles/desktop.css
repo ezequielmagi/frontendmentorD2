@@ -69,6 +69,8 @@ main {
 }
 
 .img-container {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   grid-row-start: 1;
   grid-row-end: 3;
   background-image: url("../img/image-header-desktop.jpg");
