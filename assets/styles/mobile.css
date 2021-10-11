@@ -44,7 +44,18 @@ The designs were created to the following widths:
   --Very-dark-blue: hsl(233, 47%, 7%);
   --Dark-desaturated-blue: hsl(244, 38%, 16%);
   --Soft-violet: hsl(277, 64%, 61%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white-main: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
 }
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/* fonts */
 
 * {
   margin: 0;
@@ -53,41 +64,90 @@ The designs were created to the following widths:
 }
 
 main {
+  background-color: var(--Very-dark-blue);
   padding: 20px;
 }
 
 .card-container {
-  /* background-color: var(--Dark-desaturated-blue); */
-  max-width: 375px;
+  background-color: var(--Dark-desaturated-blue);
+  border-radius: 20px;
   display: grid;
+  grid-gap: 2rem;
   grid-template-columns: 100%;
-  grid-template-rows: 45% 55%;
+  grid-template-rows: 40vh 40vh 40vh;
+  max-width: 375px;
 }
 
 .img-container {
+  background-image: url("../img/image-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 40vh;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.img-container img {
-  width: 100%;
+.img-color {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 5;
+  height: 100%;
+  background-color: var(--Soft-violet);
+  opacity: 80%;
 }
 
 .text-container {
+  align-items: center;
   grid-row-start: 2;
   display: grid;
+  grid-gap: 1.5rem;
   grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  grid-row-start: 2;
 }
 
 .title-container {
+  color: var(--White);
   grid-row-start: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  width: 90%;
 }
 
+.title-container span {
+  color: var(--Soft-violet);
+}
 .description-container {
   grid-row-start: 2;
-  background-color: rosybrown;
+  color: var(--Slightly-transparent-white-main);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 2rem;
+  width: 85%;
 }
 
 .counters-container {
   grid-row-start: 3;
+  height: 100%;
+  width: 100%;
+}
+
+.counter-title {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+}
+
+.counters-container h1 {
+  color: var(--White);
+}
+
+.counters-container p {
+  color: var(--Slightly-transparent-white-main);
+  margin-bottom: 35px;
 }
