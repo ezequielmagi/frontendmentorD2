@@ -87,9 +87,13 @@ main {
   height: 40vh;
   grid-row-start: 1;
   grid-row-end: 2;
+  /*  */
+  
+  background-color: var(--Soft-violet);
+  background-blend-mode: multiply;
 }
 
-.img-color {
+/* .img-color {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   grid-row-start: 1;
@@ -98,7 +102,7 @@ main {
   height: 100%;
   background-color: var(--Soft-violet);
   opacity: 80%;
-}
+} */
 
 .text-container {
   align-items: center;

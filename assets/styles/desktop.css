@@ -92,9 +92,12 @@ main {
   grid-row: 1/3;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+/*  */
+background-color: var(--Soft-violet);
+  background-blend-mode: multiply;
 }
 
-.img-color {
+/* .img-color {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   grid-row-start: 1;
@@ -103,7 +106,7 @@ main {
   height: 100%;
   background-color: var(--Soft-violet);
   opacity: 80%;
-}
+} */
 
 .text-container {
   width: 100%;
