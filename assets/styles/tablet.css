@@ -73,9 +73,9 @@ main {
   border-radius: 20px;
   display: grid;
   grid-gap: 2rem;
-
-  grid-template-rows: 40vh 40vh 40vh;
-  max-width: 100%;
+  margin: 0 auto;
+  grid-template-rows: 40vh 40vh 10vh;
+  max-width: 70%;
 }
 
 .img-container {

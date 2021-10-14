@@ -64,33 +64,38 @@ The designs were created to the following widths:
 }
 
 main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
   background-color: var(--Very-dark-blue);
-  padding: 20px;
 }
 
 .card-container {
+  grid-column: 3/11;
+  grid-row: 4/10;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   background-color: var(--Dark-desaturated-blue);
   border-radius: 20px;
-  display: grid;
-  grid-gap: 2rem;
-
-  grid-template-rows: 40vh 40vh 40vh;
-  max-width: 100%;
+  max-width: 960px;
 }
 
 .img-container {
-  background-image: url("../img/image-header-mobile.jpg");
+  background-image: url("../img/image-header-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-top-left-radius: 20px;
+  width: 100%;
+  height: 100%;
+  grid-column: 2;
+  grid-row: 1/3;
+  border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  height: 40vh;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 .img-color {
-  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -101,53 +106,56 @@ main {
 }
 
 .text-container {
-  align-items: center;
-  grid-row-start: 2;
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
   display: grid;
-  grid-gap: 1.5rem;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  text-align: center;
-  grid-row-start: 2;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.description-container {
+  grid-column: 2/12;
+  grid-row: 5/9;
+  padding: 1.5rem 0;
+}
+
+.counters-container {
+  grid-column: 2/12;
+  grid-row: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .title-container {
+  grid-column: 2/12;
+  grid-row: 2/4;
   color: var(--White);
-  grid-row-start: 1;
+  text-align: justify;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  padding: 0 5%;
 }
 
 .title-container span {
   color: var(--Soft-violet);
 }
 .description-container {
-  grid-row-start: 2;
   color: var(--Slightly-transparent-white-main);
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-size: 1.1em;
   line-height: 2rem;
-  padding: 0 7%;
-}
-
-.counters-container {
-  grid-row-start: 3;
-  height: 100%;
-  width: 100%;
 }
 
 .counter-title {
+  color: var(--Slightly-transparent-white-main);
   font-family: "Lexend Deca", sans-serif;
   font-weight: 700;
 }
 
-.counters-container h1 {
-  color: var(--White);
-}
-
 .counters-container p {
   color: var(--Slightly-transparent-white-main);
-  margin-bottom: 35px;
 }
