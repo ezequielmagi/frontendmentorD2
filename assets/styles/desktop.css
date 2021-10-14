@@ -94,7 +94,7 @@ main {
   border-top-right-radius: 20px;
 /*  */
 background-color: var(--Soft-violet);
-  background-blend-mode: multiply;
+background-blend-mode: multiply;
 }
 
 /* .img-color {
